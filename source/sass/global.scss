@@ -1,0 +1,27 @@
+body {
+  font-family: $font-opensans;
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  
+  outline: 1px solid black;
+}
+
+@media #{$tablet} {
+
+  .wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media #{$mobile} {
+
+  .wrapper {
+    padding: 0 10px;
+  }
+}
