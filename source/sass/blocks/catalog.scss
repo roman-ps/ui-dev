@@ -1,4 +1,17 @@
 .catalog {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media #{$tablet} {
+  .catalog {
+    justify-content: space-around;
+  }
+}
+
+@media #{$mobile} {
+  .catalog {
+    justify-content: space-around;
+  }
 }

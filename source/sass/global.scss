@@ -8,19 +8,15 @@ body {
   margin: 0 auto;
 
   box-sizing: border-box;
-  
-  outline: 1px solid black;
 }
 
 @media #{$tablet} {
-
   .wrapper {
-    padding: 0 15px;
+    padding: 0 5px;
   }
 }
 
 @media #{$mobile} {
-
   .wrapper {
     padding: 0 10px;
   }

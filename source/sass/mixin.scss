@@ -3,3 +3,8 @@
   position: absolute;
   content: '';
 }
+
+@mixin link-standart {
+  text-decoration: none;
+  color: $color-black;
+}
