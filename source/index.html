@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Тестовое задание от компании fuse8</title>
 </head>
+
 <body>
 
   <main class="main">
     <div class="wrapper">
       <h1 class="main__title">Our Latest Developments</h1>
-      <form class="form main__form">
+      <form class="form main__form" id="form">
         <label class="form__label" for="filter">Filter</label>
-        <input class="form__input" type="text" id="filter" name="filter">
+        <input class="form__input" type="search" id="filter" name="filter">
       </form>
       <div class="catalog main__catalog"></div>
       <button class="btn main__btn" type="button">See more</button>
@@ -38,4 +40,5 @@
   </template>
   <script src="js/main.js" type="module"></script>
 </body>
+
 </html>

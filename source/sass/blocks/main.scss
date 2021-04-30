@@ -11,20 +11,27 @@
 }
 
 .main__btn {
-  margin-top: 60px;
+  display: block;
+  margin: 60px auto 0;
 }
 
 @media #{$tablet} {
-
+  .main__btn {
+    margin: 30px auto 0;
+  }
 }
 
 @media #{$mobile} {
   .main__form {
     margin: 0 auto;
   }
-  
+
   .main__title {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .main__btn {
+    margin: 20px auto 0;
   }
 }
