@@ -51,11 +51,6 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('build/fonts'));
 });
 
-gulp.task('js', function() {
-  return gulp.src('source/js/*.js')
-  .pipe(gulp.dest('build/js'));
-});
-
 gulp.task('clean', function() {
   return del('build');
 });
@@ -65,5 +60,5 @@ gulp.task('refresh', function (done) {
   done();
 });
 
-gulp.task('build', gulp.series('clean', 'html', 'css', 'js', 'fonts')) // запуск всех задач сборки
+gulp.task('build', gulp.series('clean', 'html', 'css', 'fonts')) // запуск всех задач сборки
 gulp.task('watch', gulp.series('server')) // отслеживание изменения в файлах и перезагрузка
