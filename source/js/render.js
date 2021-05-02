@@ -1,8 +1,8 @@
 import {fillCard} from './card.js';
 
-const renderCard = (node, data) => {
+const renderCard = (parent, data) => {
   for (let i = 0; i < data.length; i++) {
-    node.appendChild(fillCard(data[i]));
+    parent.appendChild(fillCard(data[i]));
   }
 };
 

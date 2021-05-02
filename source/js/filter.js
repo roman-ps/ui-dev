@@ -4,6 +4,7 @@ const MIN_SEARCH_SYMBOLS = 2;
 
 const hiddenAllCards = () => {
   const CARDS = document.querySelectorAll('.card');
+
   CARDS.forEach((card) => {
     card.classList.add('hidden')
   })
@@ -11,6 +12,7 @@ const hiddenAllCards = () => {
 
 const showAllCards = () => {
   const CARDS = document.querySelectorAll('.card');
+
   CARDS.forEach((card) => {
     card.classList.remove('hidden')
   })
@@ -18,6 +20,7 @@ const showAllCards = () => {
 
 const filterCards = (value) => {
   const CARDS = document.querySelectorAll('.card');
+
   CARDS.forEach((card) => {
     const title = card.querySelector('.card__title');
 
@@ -30,16 +33,15 @@ const filterCards = (value) => {
 const changeFilterInputHandler = () => {
   if (FILTER_INPUT.value.length > MIN_SEARCH_SYMBOLS) {
     hiddenAllCards();
-    filterCards(FILTER_INPUT.value)
+    filterCards(FILTER_INPUT.value);
+    return;
   }
-  if (FILTER_INPUT.value.length <= MIN_SEARCH_SYMBOLS) {
-    showAllCards();
-  }
+  showAllCards();
 };
 
-const events = () => {
+const addEventListeners = () => {
   FILTER_INPUT.addEventListener('input', changeFilterInputHandler);
 };
 
 
-export {events}
+export {addEventListeners}
