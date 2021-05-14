@@ -21,7 +21,7 @@ const Selectors = {
   PRICE: '.card__price',
 };
 
-const addTypeCard = (node, data) => {
+const fillCardType = (node, data) => {
   node.classList.add(CardTypes[data]);
   node.textContent = data;
 }
@@ -33,7 +33,7 @@ const fillCard = (data) => {
 
   CARD.href = Urls.CARD + data.id;
   IMG.src = Urls.IMG + data.id;
-  addTypeCard(TYPE, data.type)
+  fillCardType(TYPE, data.type)
   TITLE.textContent = data.title;
   ADDRESS.textContent = data.address;
   PRICE.textContent = data.price;
