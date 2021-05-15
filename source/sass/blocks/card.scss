@@ -1,6 +1,4 @@
 .card {
-  max-width: 380px;
-
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -10,9 +8,12 @@
 
 .card__img-container {
   width: 100%;
-  height: 227px;
 
   position: relative;
+}
+
+.card__img {
+  display: block;
 }
 
 .card__info-container {
@@ -79,4 +80,22 @@
   display: block;
 
   margin: 7px 0 0;
+}
+
+@media #{$tablet} {
+
+  .card {
+    width: 45%;
+  }
+}
+
+@media #{$mobile} {
+
+  .card {
+    width: 100%;
+  }
+
+  .card__img-container {
+
+  }
 }

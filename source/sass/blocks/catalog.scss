@@ -1,17 +1,19 @@
 .catalog {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 @media #{$tablet} {
   .catalog {
-    justify-content: space-around;
+
   }
 }
 
 @media #{$mobile} {
   .catalog {
-    justify-content: space-around;
+    justify-content: center;
   }
 }
