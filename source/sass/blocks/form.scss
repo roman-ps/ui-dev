@@ -28,11 +28,15 @@
 @media #{$tablet} {
 
   .form {
-    width: 100%;
+    width: 90%;
   }
 
   .form__label {
     display: none;
+  }
+
+  .form__input {
+    margin-left: 0;
   }
 
 }
@@ -40,10 +44,14 @@
 @media #{$mobile} {
 
   .form {
-    width: 100%;
+    width: 90%;
   }
 
   .form__label {
     display: none;
+  }
+
+  .form__input {
+    margin-left: 0;
   }
 }

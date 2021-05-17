@@ -16,12 +16,18 @@
 }
 
 @media #{$tablet} {
+
+  .main__form {
+    margin: 0 auto;
+  }
+
   .main__btn {
     margin: 30px auto 0;
   }
 }
 
 @media #{$mobile} {
+
   .main__form {
     margin: 0 auto;
   }
